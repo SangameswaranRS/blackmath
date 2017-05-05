@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Enter Your Grade Point Here and Select the Credit From The Radio Button"
+        android:id="@+id/gSel"
+        android:layout_toRightOf="@+id/radioGroup"
+        android:layout_alignRight="@+id/calculateGpaButton"
+        android:layout_alignEnd="@+id/calculateGpaButton" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter"
+        android:id="@+id/EnterButton"
+        android:layout_alignTop="@+id/ResetButton"
+        android:layout_alignLeft="@+id/calculateGpaButton"
+        android:layout_alignStart="@+id/calculateGpaButton" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:id="@+id/ResetButton"
+
+        android:layout_above="@+id/calculateGpaButton"
+        android:layout_toRightOf="@+id/calculateGpaButton"
+        android:layout_toEndOf="@+id/calculateGpaButton" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:hint="Enter The Number of Subjects For This Semester"
+        android:id="@+id/noofSubj"
+        android:text="For 8 Subjects"
+        android:layout_below="@+id/gSel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate GPA "
+        android:id="@+id/calculateGpaButton"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Your GPA:"
+        android:id="@+id/GpaTextView"
+        android:layout_below="@+id/calculateGpaButton"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Advice:"
+        android:id="@+id/adviceTextView"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/GpaTextView" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EnterSubject Count"
+        android:id="@+id/button"
+        android:layout_below="@+id/noofSubj"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="enter a binary number here should NOT BE LEFT BLANK)"
+        android:digits="01"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:ems="4"
+
+        android:id="@+id/result"
+        />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BINARY TO GRAY CODE"
+        android:id="@+id/button1"
+        android:layout_weight="0.12" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BINARY TO EXCESS 3"
+        android:id="@+id/button2"
+        android:layout_weight="0.08" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BINARY TO DECIMAL"
+        android:id="@+id/button3"
+        android:layout_weight="0.11" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BINARY TO HEXADECIMAL"
+        android:id="@+id/button4"
+        android:layout_weight="0.12" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BINARY TO OCTAL"
+        android:id="@+id/button5"
+        android:layout_weight="0.16" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="RESULT DISPLAYED HERE:"
+        android:id="@+id/resultDisplay"
+        android:textColor="@color/white"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.22" />
+
+
+</LinearLayout>

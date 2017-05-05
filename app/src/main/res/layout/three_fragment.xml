@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:hint=" Enter INR value to be converted"
+        android:textColorHint="@color/white"
+        android:inputType="number"
+        android:id="@+id/inrip1"
+        android:textColor="@color/white"
+        android:layout_weight="0.21" />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="INR to Euro"
+        android:id="@+id/button01"
+        android:layout_weight="0.05" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="INR to US Dollars"
+        android:id="@+id/button02"
+        android:layout_weight="0.05" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="INR to Pound"
+        android:id="@+id/button03"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.05" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="INR to UAE Dirham"
+        android:id="@+id/button04"
+        android:layout_weight="0.05" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="INR to Dinar"
+        android:id="@+id/button05"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.05" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="INR to Australlian Dollar"
+        android:id="@+id/button06"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.05" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="INR to Renminbi(china)"
+        android:id="@+id/button07"
+        android:layout_weight="0.05" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Result of conversion:"
+        android:id="@+id/resdisp1"
+        android:textColor="@color/white"
+        android:textSize="22dp"
+
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.21" />
+</LinearLayout>
